@@ -4,7 +4,7 @@ import { APIcity, APIweather } from "./types.ts";
 
 export const getCityData = async(city: string): Promise<APIcity> =>{
 
-    const API_KEY = Deno.env.get("API_KEY");
+    const API_KEY = Deno.env.get('API_KEY');
     if(!API_KEY){
         throw new GraphQLError("Api key no encontrada 1 ")
     }
@@ -27,7 +27,7 @@ export const getCityData = async(city: string): Promise<APIcity> =>{
 
 
 export const getTemp = async(latitude: number, longitude: number): Promise<APIweather> =>{
-    const API_KEY = Deno.env.get("API_KEY");
+    const API_KEY = Deno.env.get('API_KEY');
     if(!API_KEY){
         throw new GraphQLError("Api key no encontrada")
     }
