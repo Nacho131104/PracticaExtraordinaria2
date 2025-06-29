@@ -8,7 +8,7 @@ export type HotelModel =OptionalId<{
     rooms: number,
     stars: number,
     latitude: number,
-    lomngitude: number
+    longitude: number
 }>
 
 //city api para coger datos de la ciudad
@@ -18,3 +18,9 @@ export type APIcity = Array<{
     longitude: number
 }>
 
+
+//weather api para temperaturas
+export type APIweather = {
+    temp: number,
+    min_temp: number
+}
