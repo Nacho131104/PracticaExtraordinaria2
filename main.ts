@@ -17,7 +17,7 @@ await mongoClient.connect();
 console.info("Connected to MongoDB");
 
 const mongoDB = mongoClient.db("BaseFinal");
-const ResturantsCollection =
+const HotelCollection =
   mongoDB.collection<HotelModel>("Hoteles");
 
 const server = new ApolloServer({
@@ -26,7 +26,7 @@ const server = new ApolloServer({
 });
 
 const { url } = await startStandaloneServer(server, {
-  context: async () => ({ ResturantsCollection }),
+  context: async () => ({ HotelCollection }),
 });
 
 console.info(`Server ready at ${url}`);
