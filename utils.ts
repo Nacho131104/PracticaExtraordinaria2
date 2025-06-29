@@ -6,7 +6,7 @@ export const getCityData = async(city: string): Promise<APIcity> =>{
 
     const API_KEY = Deno.env.get("API_KEY");
     if(!API_KEY){
-        throw new GraphQLError("Api key no encontrada")
+        throw new GraphQLError("Api key no encontrada 1 ")
     }
 
     const url = `https://api.api-ninjas.com/v1/city?name=${city}`
