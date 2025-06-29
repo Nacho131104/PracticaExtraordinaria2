@@ -1,7 +1,7 @@
 import { Collection } from "mongodb";
 import { HotelModel } from "./types.ts";
 import { getCityData, getTemp } from "./utils.ts";
-import { ObjectId } from "../../../../AppData/Local/deno/npm/registry.npmjs.org/bson/6.10.4/bson.d.ts";
+import { ObjectId } from "mongodb";
 import { GraphQLError } from "graphql";
 
 
